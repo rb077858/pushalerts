@@ -1,5 +1,13 @@
 <html>
-  <head></head>
+  <head><script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "f1c91a0b-d436-4426-a859-dd20be060f4c",
+    });
+  });
+</script></head>
   <body>
     <h1> הי כולם, פה תוכלו להירשם לשירות ההתראות שלנו.</h1>
   </body>
